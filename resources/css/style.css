@@ -36,6 +36,7 @@ body {
 
 /* Main background */
 .main {
+  font-family: Helvetica;
   background-image: url('../images/moto.jpeg');
   background-size: cover;
   height: 25rem;
@@ -80,7 +81,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.nav-bar ul {
+#menu-desktop {
   width: 960px;
   display: flex;
   justify-content: space-between;
@@ -98,9 +99,12 @@ body {
   font-family: Helvetica;
   margin: .75rem 0;
 }
+#menu-tablet {
+  display: none;
+}
 
 /* Products Locations & Hours Page */
-.main-page {
+.products-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -120,7 +124,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 .product img {
   width: 9.5rem;
@@ -168,11 +171,91 @@ footer {
   justify-content: center;
   align-items: center;
 }
-#cp-right {
+#container {
   width: 960px;
   color: white;
   font-family: Helvetica;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+/* Tablet Queries */
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .new-arrivals h2 {
+    font-size: .9rem;
+  }
+  .new-arrivals h1 {
+    font-size: 1.9rem;
+  }
+  #menu-desktop {
+    display: none;
+  }
+  #menu-tablet {
+    font-family: Helvetica;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-tablet a {
+    color: white;
+  }
+  #three {
+    display: none;
+  }
+  .product {
+    width: 47%;
+  }
+  .products {
+    width: 100%;
+  }
+  .loc-hour {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 470px) and (orientation:portrait) {
+  .main {
+    height: 15rem;
+  }
+  .sub-container {
+    width: 100%;
+    margin-top: 10rem;
+  }
+  .new-arrivals {
+    width: 100%;
+    height: 4.75rem;
+  }
+  .new-arrivals h2 {
+    font-size: .77rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
+  .new-arrivals h1 {
+    font-size: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+  }
+  .products {
+    justify-content: center;
+  }
+  .product {
+    display: none;
+  }
+  #one {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  .loc-hour {
+    flex-direction: column;
+    align-items: center;
+  }
+  .locs-hours {
+    width: 90%;
+    margin-top: .5rem;
+  }
+  #container {
+    width: 90%;
+    justify-content: center;
+  }
 }
