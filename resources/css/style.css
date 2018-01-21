@@ -72,3 +72,107 @@ body {
   padding-top: 0.25rem;
   padding-bottom: 2rem;
 }
+
+/* Navigation Bar */
+.nav-bar {
+  background-color: firebrick;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar ul {
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar a {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: Helvetica;
+  margin: .75rem 0;
+}
+
+/* Products Locations & Hours Page */
+.main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.products {
+  width: 960px;
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product {
+  border: 4px solid black;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.product img {
+  width: 9.5rem;
+  height: 9rem;
+  padding: 2rem 1rem;
+}
+.product .p {
+  width: 100%;
+  color: white;
+  font-family: Helvetica;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product .p p {
+  margin: .5rem 0;
+}
+
+.loc-hour {
+  font-family: Helvetica;
+  width: 960px;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.locs-hours {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+.loc-hour-box {
+  padding: 1rem 2rem;
+  margin-bottom: .25rem;
+  color: white;
+  background-color: black;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cp-right {
+  width: 960px;
+  color: white;
+  font-family: Helvetica;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
